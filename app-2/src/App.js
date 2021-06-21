@@ -8,7 +8,7 @@ function App() {
   const [list, setList] = useState([])
 
   useEffect(() => {
-    axios.get('https://pokeapi.co/api/v2/pokemon').then((res) => {
+    axios.get('https://www.haloapi.com/metadata/h5/metadata/weapons').then((res) => {
       setList(res.data.results)
     })
   }, [])
