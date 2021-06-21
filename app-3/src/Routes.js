@@ -6,6 +6,6 @@ import WeaponList from './Components/WeaponsList'
 export default (
   <Switch>
     <Route exact path="/" component={WeaponList} />
-    <Route path="/pokemon/:name" component={Weapon} />
+    <Route path="/Weapons/:id" component={Weapon} />
   </Switch>
 )
