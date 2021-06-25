@@ -5,7 +5,7 @@ import axios from 'axios';
 
 
 const Weapon = (props) => {
-  const {key} = props.match.params
+  const {id} = props.match.params
   // const [weapons, setList] = useState([])
 
   const weapons = 
@@ -625,12 +625,13 @@ const Weapon = (props) => {
  
 
   // useEffect(() => {
-  //   axios.get('https://www.haloapi.com/metadata/h5/metadata/weapons').then((res) => {
+  //   request.get('https://www.haloapi.com/metadata/h5/metadata/weapons', {}).then((res) => {
   //     setList(res.data.results)
   //   })
   // }, [])
   
   return (
+    // console.log(key)
     <div>
      <img src={weapons.key.largeIconImageUrl} alt={weapons.key.name} />
      <h2>{weapons.key.name}</h2>

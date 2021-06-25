@@ -623,7 +623,7 @@ function WeaponList() {
   }]
 
   // useEffect(() => {
-  //   axios.get('https://www.haloapi.com/metadata/h5/metadata/weapons').then((res) => {
+  //   request.get('https://www.haloapi.com/metadata/h5/metadata/weapons', {}).then((res) => {
   //     setList(res.data.results)
   //   })
   // }, [])
@@ -632,7 +632,7 @@ function WeaponList() {
     <div>
      {weapons.map((weapons, key) =>{
        return (
-        <Link key={weapons.id} to={`./${weapons.type}/${weapons.name}`}>
+        <Link key={weapons.id} to={`./Weapons/${weapons.name}`}>
           <img src={weapons.smallIconImageUrl} alt={weapons.name} />
           <h2>{weapons.name}</h2>
         </Link>
